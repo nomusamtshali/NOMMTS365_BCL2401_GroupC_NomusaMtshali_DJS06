@@ -31,3 +31,7 @@ console.log(nameLengths)
 // using the sort method to alphabetically sort the provinces
 const sortedProvinces = provinces.sort();
 console.log(sortedProvinces)
+
+// using the filter method to remove provinces containing "Cape" and logging the count of remaining provinces 
+const filteredProvinces = provinces.filter((province) => !province.includes("Cape"));
+console.log(filteredProvinces.length);
