@@ -46,3 +46,10 @@ const nameToProvince = names.reduce((acc, name, index) => {
   return acc;
   }, {});
   console.log(nameToProvince);
+
+
+// ADVANCED EXCERCISES
+
+// iterating over the products array and logging each product name
+console.log(products.map((product) => product.product));
+
