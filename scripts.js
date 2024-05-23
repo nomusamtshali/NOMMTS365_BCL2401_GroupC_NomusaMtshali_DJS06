@@ -78,4 +78,7 @@ products
 .map(product => ({...product, price: Number(product.price)}))
 .reduce((acc, product) => acc + product.price, 0),
 
+// concatenating all product names into a single string using reduce 
+products.reduce((acc, product) => acc + product.product, ''),
+
 )
