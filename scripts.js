@@ -1,9 +1,15 @@
+// EXERCISES
+
 // A list of provinces:
 const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', 'KwaZulu-Natal', 'Free State']
 
 // A list of names:
 const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie']
 
+// using the forEach method to log each name to the console
+names.forEach((names) => {
+  console.log(names)
+});
 
 // using the forEach method to log each name with a matching province in the format "Name (Province)".
 names.forEach((name, index) => {
