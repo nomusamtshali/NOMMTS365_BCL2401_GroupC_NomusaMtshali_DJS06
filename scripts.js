@@ -70,5 +70,12 @@ products.map(product => product.product),
 // filtering out products with names longer than 5 characters
 products.filter(product => product.product.length <= 5),
 
+/* filtering out products without prices
+converting string prices to numbers 
+calculating the total price of all products using reduce */
+products
+.filter(product => product.price)
+.map(product => ({...product, price: Number(product.price)}))
+.reduce((acc, product) => acc + product.price, 0),
 
 )
