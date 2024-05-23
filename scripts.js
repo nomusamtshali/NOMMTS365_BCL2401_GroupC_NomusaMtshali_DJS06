@@ -53,3 +53,6 @@ const nameToProvince = names.reduce((acc, name, index) => {
 // iterating over the products array and logging each product name
 console.log(products.map((product) => product.product));
 
+// filtering out products with names longer than 5 characters
+console.log(products.filter((product) => product.product.length <= 5));
+
