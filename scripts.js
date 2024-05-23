@@ -62,3 +62,8 @@ const products = [
   { product: 'tea', price: '' },
 ]
 
+console.log (
+
+// iterating over the products array
+products.map(product => product.product), 
+)
