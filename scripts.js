@@ -66,4 +66,9 @@ console.log (
 
 // iterating over the products array
 products.map(product => product.product), 
+
+// filtering out products with names longer than 5 characters
+products.filter(product => product.product.length <= 5),
+
+
 )
