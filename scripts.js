@@ -34,7 +34,7 @@ console.log(sortedProvinces)
 
 // using the filter method to remove provinces containing "Cape" and logging the count of remaining provinces 
 const filteredProvinces = provinces.filter((province) => !province.includes("Cape"));
-console.log(filteredProvinces.length);
+console.log(filteredProvinces);
 
 // using map and some method to determine if a name contains the letter 'S'
 const namesWithS = names.map((name) => name.includes('S'));
@@ -50,9 +50,5 @@ const nameToProvince = names.reduce((acc, name, index) => {
 
 // ADVANCED EXCERCISES
 
-// iterating over the products array and logging each product name
-console.log(products.map((product) => product.product));
 
-// filtering out products with names longer than 5 characters
-console.log(products.filter((product) => product.product.length <= 5));
 
