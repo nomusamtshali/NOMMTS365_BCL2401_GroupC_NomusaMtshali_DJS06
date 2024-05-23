@@ -11,6 +11,11 @@ names.forEach((names) => {
   console.log(names)
 });
 
+// using the forEach method to log each province to the console
+provinces.forEach((provinces) => {
+  console.log(provinces)
+});
+
 // using the forEach method to log each name with a matching province in the format "Name (Province)".
 names.forEach((name, index) => {
   const province = provinces[index];
