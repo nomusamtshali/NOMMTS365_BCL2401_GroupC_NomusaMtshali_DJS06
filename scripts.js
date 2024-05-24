@@ -81,4 +81,18 @@ products
 // concatenating all product names into a single string using reduce 
 products.reduce((acc, product) => acc + product.product, ''),
 
+// identifying the highest and lowest-prices items
+products.reduce((results, product) => {
+  const price = parseInt(product.price);       
+  if (price) {
+      results.Highest = Math.max(results.Highest || 0, price);   
+    }       
+  if (price) {
+    results.Lowest = Math.min(results.Lowest || Infinity, price);       
+  }       
+  return results;     
+},     
+  {Highest: undefined, Lowest: undefined}),
+
+
 )
