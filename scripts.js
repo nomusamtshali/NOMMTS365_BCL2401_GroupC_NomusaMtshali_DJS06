@@ -94,5 +94,10 @@ products.reduce((results, product) => {
 },     
   {Highest: undefined, Lowest: undefined}),
 
+// recreating the products object with keys 'name' and 'cost' while maintaining their orignal values 
+Object.entries(products).reduce((acc, [index, { product, price }]) => {     
+  acc[index] = { name: product, cost: price };     
+  return acc;   
+}, []) 
 
-)
+);
