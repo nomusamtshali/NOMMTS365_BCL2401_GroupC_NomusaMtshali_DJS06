@@ -58,7 +58,7 @@ For these exercises, wrap your logic in a single `console.log` statement:
 - Grasping the fundamental JavaScript array methods: I effectively used forEach, map, sort, filter, and reduce to manipulate the provided arrays under the first set of excercises.
 
 ## Challenges Faced
-- Handling potentially invalid data: The products array contained missing prices and I was puzzeled by this. It took some time to work around the 'products' array.
+- Handling potentially invalid/unavailable data: The products array contained missing prices and I was puzzeled by this. It took some time to work around the 'products' array.
 - Iterating over an array that has missing values
 
 ## Areas of improvement
